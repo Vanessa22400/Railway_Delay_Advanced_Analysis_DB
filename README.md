@@ -31,6 +31,16 @@ This second project therefore focuses on **predictive modeling and explainabilit
 
 ---
 
+## Dataset
+
+Source: Deutsche Bahn Railway Data  
+https://huggingface.co/datasets/piebro/deutsche-bahn-data
+
+The original dataset contains **millions of train operation records across Germany**.
+
+For this project, a Python streaming approach was used to extract only the records related to **Tübingen Hbf** over a **12-month period (Aug 2024 – Jul 2025)**.
+
+---
 ## Problem Statement
 
 Can advanced machine learning models improve delay prediction and critical delay detection for Tübingen Hbf, and what do explainability methods reveal about the structural drivers behind delays?
