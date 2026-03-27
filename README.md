@@ -1,9 +1,9 @@
-# Railway Delay Modeling and Explainability: Tübingen (Germany)
+# Railway Delay Prediction and Explainability: A Comparative Study in Tübingen (Germany)
 *Advanced machine learning and SHAP interpretability to improve delay prediction and reliability insights in Germany’s national railway system (Deutsche Bahn).*
 
 **Dataset**: 12 months of railway operations (24,760 cleaned records)  
-**Techniques**: feature reuse, boosting models (XGBoost, LightGBM, CatBoost), SHAP explainability  
-**Key Result**: Random Forest reached 0.87 accuracy with 0.35 recall for critical delays; CatBoost achieved the lowest MAE (2.30 min) for delay duration
+**Techniques**: refined feature engineering, boosting models (XGBoost, LightGBM, CatBoost), SHAP explainability  
+**Key Result**: Random Forest reached 0.87 accuracy with 0.35 recall for critical delays and achieved R² = 0.25 in delay prediction; CatBoost achieved the lowest MAE (2.30 min) for delay duration
 
 ---
 
@@ -118,7 +118,7 @@ Estimates expected delay minutes under typical conditions. This supports baselin
 **Classification Task (Predicting Critical Delay Risk)**  
 Labels delays above 5 minutes as critical delays to better align modeling with passenger decision-making and disruption risk.
 
-A key design choice in this project is **cyclical time representation** (hour_sin/hour_cos), which helps models treat late-night and early-morning hours as adjacent rather than distant.
+A key design choice in this project is **cyclical time representation** (hour_sin/hour_cos), which helps models treat late-night and early-morning hours as adjacent rather than distant. This refined feature representation plays a key role in improving the model’s ability to capture delay variability compared to the previous approach.
 
 ---
 
