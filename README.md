@@ -33,8 +33,6 @@ This second project therefore focuses on **predictive modeling and explainabilit
 
 ## Dataset
 
-Source: Deutsche Bahn Railway Data  
-https://huggingface.co/datasets/piebro/deutsche-bahn-data
 
 The original dataset contains **millions of train operation records across Germany**.
 
